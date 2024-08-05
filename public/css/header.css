@@ -1,0 +1,179 @@
+/* ヘッダー全体 */
+.header-container {
+  background: linear-gradient(to bottom, #004080, #000dff); /* グラデーション背景 */
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* コンテナ */
+.header-content {
+  display: flex;
+  justify-content: space-between; /* 左右に配置 */
+  align-items: center; /* 高さ中央に配置 */
+  max-width: 1200px;
+  margin: 0 auto; /* 中央寄せ */
+  padding: 0 20px;
+}
+
+/* ロゴ */
+.header-logo .logo_img {
+  width: 50px; /* ロゴの幅 */
+  height: 50px; /* ロゴの高さ */
+}
+
+/* 電話番号 */
+.header-contact .company-name {
+  font-size: 1.5em; /* フォントサイズを調整 */
+  font-weight: bold; /* 太文字に */
+  color: #fff; /* テキストカラーを白に */
+}
+
+.header-contact .phone {
+  display: flex;
+  align-items: center; /* アイコンと電話番号を縦中央に配置 */
+  font-size: 1.2em;
+  color: #fff; /* テキストカラー */
+}
+
+.header-contact .phone img {
+  width: 20px; /* アイコンの幅 */
+  height: 20px; /* アイコンの高さ */
+  margin-right: 10px; /* アイコンとテキストの間のマージン */
+}
+
+/* ハンバーガーメニューアイコン */
+.menu-icon {
+  display: none; /* デフォルトは非表示 */
+  font-size: 2em;
+  color: #fff; /* 色を白に */
+  cursor: pointer;
+}
+
+/* ナビゲーションバー */
+.navibre {
+  background: url('../img/nav.png') no-repeat center center; /* ナビの背景画像 */
+  background-size: cover; /* 画像をカバーさせる */
+  width: 100%;
+  padding: 10px 0; /* 上下のパディング */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navibre ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; /* 項目を2行にする */
+  justify-content: center; /* 中央揃え */
+  gap: 10px; /* 項目間のスペース */
+}
+
+.navibre ul li {
+  flex: 1 1 calc(20% - 20px); /* 各項目の幅を設定し、2行に収める */
+  text-align: center; /* テキスト中央揃え */
+  margin: 5px; /* 項目間のスペース */
+}
+
+.navibre ul li a {
+  display: block;
+  color: #fff; /* 文字の色を白に */
+  text-decoration: none;
+  font-size: 20px; /* フォントサイズを20pxに */
+  font-weight: bold; /* 太文字に */
+  padding: 10px 20px; /* 内側の余白を追加 */
+  background-color: rgba(0, 37, 200, 0.481); /* 背景色を追加 */
+  border-radius: 8px; /* 角を丸く */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.navibre ul li a:hover {
+  background-color: pink; /* ホバー時の背景色をピンクに */
+  transform: scale(1.05); /* ホバー時に少し拡大 */
+}
+
+.navibre ul li a:active {
+  background-color: green; /* クリック時の背景色を緑に */
+}
+
+/* ログイン・新規登録リンクのスタイル */
+.header-auth {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-auth a.auth-link {
+  color: white;
+  text-decoration: none;
+  font-size: 20px; /* フォントサイズを20pxに */
+  font-weight: bold;
+  padding: 10px 20px;
+  background: rgba(0, 37, 200, 0.481); /* 背景色を追加 */
+  border-radius: 8px; /* 角を丸く */
+  transition: background 0.3s, transform 0.3s;
+}
+
+.header-auth a.auth-link:hover {
+  background: pink; /* ホバー時の背景色をピンクに */
+  transform: scale(1.05);
+}
+
+.header-auth a.auth-link:active {
+  background: green; /* クリック時の背景色を緑に */
+}
+
+/* メディアクエリ（スマホ対応） */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* ハンバーガーメニューアイコンを表示 */
+  }
+
+  .navibre {
+    display: none; /* デフォルトは非表示 */
+    position: absolute;
+    width: 100%;
+    top: 60px; /* ハンバーガーメニューの下に表示 */
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* 背景色を変更 */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* 他の要素の上に表示 */
+  }
+
+  .navibre ul {
+    flex-direction: column; /* 縦に並べる */
+    gap: 0;
+  }
+
+  .navibre ul li {
+    flex: 1 1 100%; /* 幅を100%に */
+    margin: 10px 0;
+  }
+
+  .navibre ul li a {
+    background-color: transparent; /* 背景色を透明に */
+    padding: 10px;
+    border: none;
+    text-align: left; /* 左揃えに */
+  }
+}
+
+/* デスクトップ対応 */
+@media (min-width: 769px) {
+  .navibre {
+    display: flex; /* デスクトップでは常に表示 */
+    justify-content: center; /* 中央揃え */
+  }
+
+  .navibre ul {
+    max-width: 1150px; /* 最大幅を950pxに設定 */
+    width: 100%; /* 幅を100%に設定 */
+    display: flex;
+    justify-content: space-between; /* 項目を等間隔に配置 */
+  }
+
+  .navibre ul li {
+    flex: 0 0 auto; /* 各項目の幅を自動に */
+    margin: 0 10px; /* 項目間のスペース */
+  }
+}

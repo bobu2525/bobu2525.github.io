@@ -1,0 +1,872 @@
+/* パンくずリスト */
+.breadcrumb {
+  background: linear-gradient(to bottom, #0055ff, #0009ab);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.breadcrumb ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.breadcrumb ul li {
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+.breadcrumb ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.breadcrumb ul li a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb ul li:after {
+  content: ">";
+  margin-left: 10px;
+  color: #ffffff;
+}
+
+.breadcrumb ul li:last-child:after {
+  content: "";
+}
+
+/* ヒーローセクション */
+/* ヒーローセクション */
+.hero {
+  background: url('../img/hero-bg.jpg') no-repeat center center; /* 背景画像を追加 */
+  background-size: cover;
+  padding: 100px 0;
+  color: #333; /* テキストの色を変更 */
+  text-align: center; /* テキストを中央揃え */
+}
+
+.hero-content h2 {
+  font-size: 2.5em; /* 大きめのフォントサイズ */
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2em; /* 大きめのフォントサイズ */
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #004080;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  text-align: center; /* ボタンのテキストを中央揃え */
+  margin: 0 auto; /* ボタン自体を中央に配置 */
+}
+
+.btn:hover {
+  background-color: #003366;
+}
+
+
+
+
+
+
+
+
+
+
+/* SDGsセクション */
+.sdgs {
+  background: linear-gradient(to right, #00007b, #00ff00), url('../img/sdgs-bg.jpg') no-repeat center center; /* 青から緑へのグラデーション */
+  background-size: cover;
+  padding: 60px 20px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.sdgs::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 128, 0.6); /* 半透明の青色のオーバーレイ */
+  z-index: 1;
+}
+
+.sdgs .container {
+  position: relative;
+  z-index: 2;
+}
+
+.sdgs-content {
+  max-width: 880px; /* テキストの最大幅 */
+  margin: 0 auto; /* 中央揃え */
+}
+
+.sdgs-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.sdgs-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.sdgs-content h2, .sdgs-content p {
+  color: #fff; /* テキストの色を白に */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* テキストにシャドウを追加 */
+}
+
+/* メディアクエリ（スマホ対応） */
+@media (max-width: 768px) {
+  .sdgs-content h2 {
+    font-size: 1.8em;
+  }
+
+  .sdgs-content p {
+    font-size: 1em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 経営理念セクションのスタイル */
+.philosophy {
+  padding: 60px 20px; /* 上下の余白を追加 */
+  color: #000000; /* テキストの色を黒に */
+  text-align: center; /* テキストを中央揃え */
+  position: relative; /* 相対位置を指定 */
+  overflow: hidden; /* コンテンツがはみ出さないように設定 */
+}
+
+/* コンテナ */
+.philosophy .container {
+  max-width: 880px; /* テキストの最大幅を設定 */
+  margin: 0 auto; /* コンテンツを中央揃え */
+}
+
+/* 見出しのスタイル */
+.philosophy-content h2 {
+  font-size: 2.5em; /* フォントサイズを設定 */
+  margin-bottom: 20px; /* 下の余白を追加 */
+}
+
+/* イントロのスタイル */
+.philosophy-content .intro {
+  font-size: 1.2em; /* フォントサイズを設定 */
+  margin-bottom: 40px; /* 下の余白を追加 */
+}
+
+/* サブ見出しのスタイル */
+.philosophy-content h3 {
+  font-size: 2em; /* フォントサイズを設定 */
+  margin-bottom: 20px; /* 下の余白を追加 */
+}
+
+/* リストのスタイル */
+.philosophy-list {
+  list-style: none; /* リストマーカーを削除 */
+  padding: 0; /* 内側の余白を削除 */
+  margin: 0; /* 外側の余白を削除 */
+  text-align: left; /* テキストを左揃え */
+}
+
+.philosophy-list li {
+  margin-bottom: 20px; /* 下の余白を追加 */
+  font-size: 1.2em; /* フォントサイズを設定 */
+}
+
+/* リスト内の強調テキストのスタイル */
+.philosophy-list li strong {
+  font-size: 1.3em; /* フォントサイズを設定 */
+  color: #00ff7f; /* テキストの色を緑に */
+}
+
+/* セクション内のテキストスタイル */
+.philosophy-content h2, .philosophy-content p, .philosophy-content h3, .philosophy-list li {
+  color: #000000; /* テキストの色を黒に */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* テキストにシャドウを追加 */
+}
+
+/* メディアクエリ（スマホ対応） */
+@media (max-width: 768px) {
+  .philosophy-content h2 {
+    font-size: 1.8em; /* フォントサイズを調整 */
+  }
+
+  .philosophy-content .intro {
+    font-size: 1em; /* フォントサイズを調整 */
+  }
+
+  .philosophy-content h3 {
+    font-size: 1.5em; /* フォントサイズを調整 */
+  }
+
+  .philosophy-list li {
+    font-size: 1em; /* フォントサイズを調整 */
+  }
+
+  .philosophy-list li strong {
+    font-size: 1.2em; /* フォントサイズを調整 */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* 安らぎ供養が選ばれる理由セクション */
+.reasons {
+  padding: 60px 20px; /* 上下の余白を追加 */
+  background-color: #f9f9f9; /* 背景色を薄いグレーに */
+  text-align: center; /* テキストを中央揃え */
+}
+
+.reasons .container {
+  max-width: 900px; /* コンテナの最大幅を設定 */
+  margin: 0 auto; /* コンテナを中央揃え */
+  display: flex; /* フレックスボックスレイアウトを使用 */
+  justify-content: space-between; /* 項目を均等に配置 */
+  gap: 20px; /* 各項目の間にスペースを追加 */
+  flex-wrap: wrap; /* アイテムを折り返す */
+}
+
+.reasons h2 {
+  font-size: 2.5em; /* 見出しのフォントサイズを設定 */
+  width: 100%; /* 見出しをコンテナ全体の幅に */
+  margin-bottom: 40px; /* 見出しの下に余白を追加 */
+}
+
+.reason-item {
+  flex: 1; /* 各項目の幅を均等に */
+  max-width: 250px; /* 最小幅を250pxに設定 */
+  background-color: #ffffff; /* 背景色を白に */
+  border-radius: 10px; /* 角を丸く */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ボックスシャドウを追加 */
+  padding: 20px; /* 内側の余白を追加 */
+  display: flex; /* フレックスボックスレイアウトを使用 */
+  flex-direction: column; /* 垂直方向に要素を並べる */
+  justify-content: flex-start; /* 上部に寄せる */
+  align-items: center; /* アイテムを中央揃え */
+  text-align: center; /* テキストを中央揃え */
+}
+
+.reason-item img {
+  width: 70%; /* 画像の幅を70%に */
+  border-radius: 10px; /* 画像の角を丸く */
+  margin-bottom: 20px; /* 画像の下部に余白を追加 */
+}
+
+.reason-item p {
+  font-size: 1em; /* フォントサイズを設定 */
+  color: #333; /* テキストの色を設定 */
+  margin: 20px 0 0; /* 上に余白を追加 */
+}
+
+/* メディアクエリ（スマホ対応） */
+@media (max-width: 768px) {
+  .reasons .container {
+    flex-direction: column; /* 縦に並べる */
+    align-items: center; /* アイテムを中央揃え */
+  }
+  .reason-item {
+    width: 100%; /* 各項目の幅を100%に */
+    margin: 20px 0; /* 項目の上下に余白を追加 */
+  }
+}
+
+
+
+/* 墓清掃プランセクション */
+.plans {
+  padding: 60px 20px; /* 上下の余白を追加 */
+  background-color: #f9f9f9; /* 背景色を薄いグレーに */
+  text-align: center; /* テキストを中央揃え */
+}
+
+.plans .container {
+  max-width: 1200px; /* コンテナの最大幅を設定 */
+  margin: 0 auto; /* コンテナを中央揃え */
+  display: flex; /* フレックスボックスレイアウトを使用 */
+  justify-content: center; /* アイテムを中央に配置 */
+  flex-wrap: wrap; /* アイテムを折り返す */
+}
+
+.plans h2 {
+  font-size: 2.5em; /* 見出しのフォントサイズを設定 */
+  width: 100%; /* 見出しをコンテナ全体の幅に */
+  margin-bottom: 40px; /* 見出しの下に余白を追加 */
+}
+
+.plan-item {
+  flex: 1 1 45%; /* 各項目の幅を設定 */
+  background-color: #ffffff; /* 背景色を白に */
+  border-radius: 10px; /* 角を丸く */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ボックスシャドウを追加 */
+  padding: 20px; /* 内側の余白を追加 */
+  margin: 20px; /* アイテム間の余白を追加 */
+  text-align: left; /* テキストを左揃え */
+}
+
+.plan-item img {
+  width: 100%; /* 画像の幅を100%に */
+  border-radius: 10px; /* 画像の角を丸く */
+  margin-bottom: 20px; /* 画像の下部に余白を追加 */
+}
+
+.plan-item .plan-content {
+  text-align: center; /* コンテンツを中央揃え */
+}
+
+.plan-item h3 {
+  font-size: 1.8em; /* 見出しのフォントサイズを設定 */
+  margin-bottom: 10px; /* 見出しの下に余白を追加 */
+}
+
+.plan-item p {
+  font-size: 1em; /* フォントサイズを設定 */
+  color: #333; /* テキストの色を設定 */
+  margin: 10px 0; /* 上下に余白を追加 */
+}
+
+.plan-item .btn {
+  display: inline-block; /* インラインブロック要素に設定 */
+  background-color: #004080; /* ボタンの背景色 */
+  color: #fff; /* ボタンのテキスト色 */
+  padding: 10px 20px; /* ボタンの内側の余白 */
+  border-radius: 5px; /* 角を丸く */
+  text-decoration: none; /* テキストの装飾を削除 */
+  transition: background-color 0.3s; /* 背景色のトランジション */
+}
+
+.plan-item .btn:hover {
+  background-color: #003366; /* ホバー時の背景色 */
+}
+
+/* メディアクエリ（スマホ対応） */
+@media (max-width: 768px) {
+  .plan-item {
+    flex: 1 1 100%; /* 各項目の幅を100%に */
+    margin: 20px 0; /* 項目の上下に余白を追加 */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ご依頼の流れセクション */
+.flow {
+  padding: 60px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.container-flow-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flow h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.flow-steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.flow-step {
+  flex: 1 1 200px; /* 最小幅を設定 */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  height: 300px; /* 高さを固定 */
+  max-width: 200px; /* 最大幅を設定 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flow-step img {
+  width: 80%;
+  max-height: 150px; /* 画像の高さを固定 */
+  object-fit: contain; /* 画像の比率を維持 */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.flow-step p {
+  font-size: 1.2em;
+  color: #333;
+  margin-top: auto; /* テキストを下部に配置 */
+}
+
+.flow-arrow {
+  font-size: 2em;
+  color: #004080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #004080;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #003366;
+}
+
+/* メディアクエリ（スマホ対応） */
+@media (max-width: 768px) {
+  .flow-steps {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .flow-step {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .flow-arrow {
+    display: none;
+  }
+}
+
+
+
+
+/* トピックス一覧セクション */
+.topics {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.topics .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.topics h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.topic-item {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.topic-image {
+  width: 30%;
+  max-width: 200px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.topic-content {
+  width: 70%;
+  text-align: left;
+}
+
+.topic-content h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.topic-content h3 .highlight {
+  display: inline-block;
+  background-color: #87CEEB; /* 背景色をスカイブルーに */
+  font-weight: bold;
+  font-size: 0.8em;
+  animation: colorChange 0.6s infinite; /* 色の変化をアニメーションに */
+  border-radius: 5px; /* 角を丸くする */
+  padding: 5px; /* パディングを追加して背景色を適用 */
+}
+
+@keyframes colorChange {
+  0%, 100% {
+    color: #ff69b4; /* ショッキングピンク */
+  }
+  50% {
+    color: #ffff00; /* ショッキングイエロー */
+  }
+}
+
+.topic-content p {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.topic-content .quote {
+  font-style: italic;
+  color: #666;
+}
+
+/* メディアクエリ（スマホ対応） */
+@media (max-width: 768px) {
+  .topic-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topic-image {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .topic-content {
+    width: 100%;
+  }
+}
+
+
+
+/* 利用者の声セクション */
+.testimonials {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.testimonials .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.testimonial-item {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  flex-wrap: wrap; /* フレックスボックスの折り返しを有効に */
+}
+
+.testimonial-image {
+  width: 30%;
+  max-width: 200px;
+  border-radius: 50%; /* 画像を丸くする */
+  margin-right: 20px;
+}
+
+.testimonial-content {
+  width: 70%;
+  text-align: left;
+}
+
+.stars {
+  font-size: 1.5em;
+  color: #ffa500;
+  margin-bottom: 10px;
+}
+
+.testimonial-text {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.testimonial-comment {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.testimonial-quote {
+  font-style: italic;
+  color: #666;
+}
+
+/* メディアクエリ（スマホ対応） */
+@media (max-width: 768px) {
+  .testimonial-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .testimonial-image {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-content {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+/* よくあるご質問セクション */
+.faq {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: left;
+}
+
+.faq .container {
+  max-width: 900px; /* コンテナの最大幅を広げる */
+  margin: 0 auto;
+  display: flex; /* フレックスボックスレイアウトを使用 */
+  flex-wrap: wrap; /* アイテムを折り返す */
+  gap: 20px; /* アイテム間の間隔を設定 */
+}
+
+.faq h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 100%; /* 見出しをコンテナ全体に広げる */
+}
+
+.faq-item {
+  flex: 1 1 calc(50% - 20px); /* 各アイテムを2列に配置 */
+  max-width: calc(400px - 20px); /* 各アイテムの最大幅を設定 */
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 250px; /* 高さを設定 */
+}
+
+.faq-item p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.faq-item .question {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #004080;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.faq-item .question::before {
+  content: "Q: ";
+  font-weight: bold;
+  color: #ff6b6b;
+  margin-right: 10px;
+}
+
+.faq-item .answer {
+  font-size: 1.1em;
+  color: #333333;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.faq-item .answer::before {
+  content: "A: ";
+  font-weight: bold;
+  color: #4caf50;
+  margin-right: 10px;
+}
+
+/* メディアクエリ（スマホ対応） */
+@media (max-width: 768px) {
+  .faq {
+    text-align: center;
+  }
+
+  .faq h2 {
+    font-size: 2em;
+  }
+
+  .faq .container {
+    flex-direction: column; /* 縦に並べる */
+  }
+
+  .faq-item {
+    flex: 1 1 100%; /* 各アイテムを1列に */
+    padding: 15px;
+  }
+
+  .faq-item .question,
+  .faq-item .answer {
+    font-size: 1em;
+  }
+}
+
+
+
+
+
+/* お知らせ・更新情報セクション */
+.news {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.news .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.news h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.news-item {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.news-item .date {
+  font-size: 1em;
+  color: #777777;
+  margin-bottom: 5px;
+}
+
+.news-item .tag {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #004080;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.news-item .tag.update {
+  background-color: #28a745;
+}
+
+.news-item .tag.notice {
+  background-color: #ff6b6b;
+}
+
+.news-item .content {
+  font-size: 1.1em;
+  color: #333333;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* メディアクエリ（スマホ対応） */
+@media (max-width: 768px) {
+  .news .container {
+    padding: 0 10px;
+  }
+
+  .news h2 {
+    font-size: 2em;
+  }
+
+  .news-item {
+    padding: 15px;
+  }
+
+  .news-item .date {
+    font-size: 0.9em;
+  }
+
+  .news-item .tag {
+    font-size: 0.8em;
+    padding: 3px 8px;
+  }
+
+  .news-item .content {
+    font-size: 1em;
+  }
+}

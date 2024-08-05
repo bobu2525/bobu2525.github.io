@@ -1,0 +1,489 @@
+h2 {
+  border-bottom: 2px solid #004080; /* アンダーバーを追加 */
+}
+
+
+.service-detail h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #004080; /* 落ち着いた青色 */
+  
+  padding-bottom: 10px; /* アンダーバーとの間にスペースを追加 */
+  text-align: center; /* 中央揃え */
+}
+
+.service-detail p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #666; /* 中程度のグレー */
+  text-align: center; /* 中央揃え */
+  line-height: 1.8; /* 行間を広げる */
+  max-width: 800px; /* 最大幅を設定 */
+  margin-left: auto;
+  margin-right: auto; /* 左右中央揃え */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* プラン詳細セクション */
+.plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; /* セクション間の間隔 */
+}
+
+.plans-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* プラン間の間隔 */
+  width: 100%;
+}
+
+.plan {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 250px; /* プランの幅を設定 */
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 500px; /* プランの最小高さを設定 */
+}
+
+.plan-light {
+  border-top: 5px solid #ADD8E6; /* ライトプランを淡い青色で強調 */
+  background-color: #E0F7FA; /* 背景色を淡い青色に設定 */
+}
+
+.plan-basic {
+  border-top: 5px solid #87CEEB; /* 基本プランを明るい青色で強調 */
+  background-color: #B3E5FC; /* 背景色を明るい青色に設定 */
+}
+
+.plan-premium {
+  border-top: 5px solid #4682B4; /* プレミアムプランを濃い青色で強調 */
+  background-color: #BBDEFB; /* 背景色を濃い青色に設定 */
+}
+
+.plan img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.plan h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.plan p.price {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.plan p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.plan ul.ul-pran {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.plan ul.ul-pran li {
+  margin-bottom: 10px;
+}
+
+.plan a.plan-btn {
+  display: inline-block;
+  background-color: #004080;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-top: auto; /* ボタンを下部に配置 */
+  margin-bottom: 15px; /* ボタンの下にマージンを追加 */
+}
+
+.plan a.plan-btn:hover {
+  background-color: #003366;
+}
+
+/* カスタムプランのみ下段に配置 */
+.custom-plan-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.custom-plan {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 250px; /* プランの幅を設定 */
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 500px; /* プランの最小高さを設定 */
+}
+
+.custom-plan img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.custom-plan h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.custom-plan p.price {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.custom-plan p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.custom-plan ul.ul-pran {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.custom-plan ul.ul-pran li {
+  margin-bottom: 10px;
+}
+
+/* リストアイテムのスタイル */
+.ul-pran li {
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #f0f0f0; /* 背景色を設定 */
+  border-radius: 5px; /* 角を丸くする */
+  display: flex;
+  align-items: center;
+}
+
+.ul-pran li i {
+  margin-right: 10px; /* アイコンとテキストの間に間隔を設定 */
+}
+
+.custom-plan a.plan-btn {
+  display: inline-block;
+  background-color: #004080;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-top: auto; /* ボタンを下部に配置 */
+  margin-bottom: 15px; /* ボタンの下にマージンを追加 */
+}
+
+.custom-plan a.plan-btn:hover {
+  background-color: #003366;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* その他オプションセクション */
+.options {
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.options .container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.options h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.option-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.option-item {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 200px; /* アイテムの幅を設定 */
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px; /* アイテムの高さを設定 */
+}
+
+.option-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.option-item p {
+  font-size: 1em;
+  margin: 0;
+}
+
+.option-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* プラン詳細セクション */
+.regular-plans {
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.regular-plans .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.regular-plans h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.regular-plans .plans-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.regular-plans .plan {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 300px; /* プランの幅を設定 */
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto; /* プランの高さを自動設定 */
+}
+
+.regular-plans .plan h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.regular-plans .plan .price {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: red;
+}
+
+.regular-plans .plan .discounted-price {
+  font-size: 1.2em;
+  color: red;
+}
+
+.regular-plans .plan p {
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.regular-plans .plan a.btn-teiki {
+  display: inline-block;
+  background-color: #004080;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-top: auto; /* ボタンを下部に配置 */
+  margin-bottom: 15px; /* ボタンの下にマージンを追加 */
+}
+
+.regular-plans .plan a.btn-teiki:hover {
+  background-color: #003366;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .btn-teikiをセンターに配置 */
+.btn-teiki {
+  display: inline-block;
+  background-color: #004080;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  text-align: center; /* テキストを中央揃え */
+  margin: 0 auto; /* ボタン自体を中央に配置 */
+}
+
+/* 親要素内でボタンをセンターに配置 */
+.contact .container {
+  display: flex;
+  justify-content: center; /* 水平方向に中央揃え */
+}
+
+/* お問い合わせセクション */
+.contact-bigbtn {
+  background-color: #00264d; /* 背景色を落ち着いた紺色に設定 */
+  color: #ffffff; /* テキストカラーを白に設定 */
+  padding: 20px;
+  border-radius: 10px; /* 角を丸くする */
+  text-align: center; /* テキストを中央揃え */
+  margin: 20px auto; /* 上下のマージンを設定 */
+  width: fit-content; /* コンテンツに合わせた幅を設定 */
+}
+
+/* テキストスタイル */
+.contact-bigbtn .info {
+  font-size: 0.9em;
+  margin-bottom: 5px;
+  color: #ffffff; /* テキストカラーを白に設定 */
+}
+
+.contact-bigbtn .info .highlight {
+  font-size: 1.2em; /* フォントサイズを大きくする */
+  font-weight: bold; /* 太字にする */
+  color: #ffcc00; /* ゴールドカラーに設定 */
+}
+
+.contact-bigbtn .phone {
+  font-size: 2em;
+  margin: 10px 0;
+  display: flex;
+  align-items: center; /* アイコンとテキストを中央揃え */
+  justify-content: center; /* 中央揃え */
+  color: #ffffff; /* テキストカラーを白に設定 */
+}
+
+.contact-bigbtn .note {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #ffffff; /* テキストカラーを白に設定 */
+}
+
+/* ボタンスタイル */
+.btn-contact {
+  display: inline-block;
+  background-color: #007acc; /* 背景色を落ち着いた青色に設定 */
+  color: #ffffff; /* テキストカラーを白に設定 */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: background-color 0.3s;
+  border: none; /* ボーダーを削除 */
+}
+
+.btn-contact:hover {
+  background-color: #005a99; /* ホバー時の背景色を濃い青に設定 */
+  border: none; /* ボーダーを削除 */
+}
+
+/* アイコンのスタイル */
+.contact-bigbtn .phone img {
+  vertical-align: middle; /* テキストとアイコンを中央揃え */
+  margin-right: 10px; /* アイコンとテキストの間にマージンを追加 */
+  filter: brightness(0) invert(1); /* アイコンの色を白に変更 */
+}

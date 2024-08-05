@@ -1,0 +1,107 @@
+
+/* サービス紹介セクション */
+.service-intro {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.service-intro .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.service-intro h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.service-intro p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+/* p-servicsクラスの高さを110pxに設定 */
+.p-servics {
+  height: 110px;
+  display: flex;
+  align-items: center; /* テキストを垂直方向に中央揃え */
+  justify-content: center; /* テキストを水平方向に中央揃え */
+  text-align: center; /* テキストを中央揃え */
+  margin-bottom: 200px; /* 下部の余白を設定 */
+}
+
+/* 各サービスセクション */
+.services {
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.services .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 550px; /* 高さを固定 */
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.service-content {
+  flex-grow: 1; /* 空いているスペースを埋める */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-content h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.service-content p {
+  font-size: 1em;
+  margin-bottom: 20px;
+  flex-grow: 1; /* pタグの高さを均等にする */
+  display: flex;
+  align-items: center; /* テキストを垂直方向に中央揃え */
+  justify-content: center; /* テキストを水平方向に中央揃え */
+}
+
+.btn-service {
+  display: inline-block;
+  background-color: #004080;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-service:hover {
+  background-color: #003366;
+}

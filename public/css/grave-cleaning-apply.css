@@ -1,0 +1,249 @@
+/* パンくずリストのスタイル */
+.breadcrumb {
+  padding: 10px 20px;
+  background: #f8f8f8;
+  margin-bottom: 10px;
+}
+
+.breadcrumb ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb ul li {
+  margin-right: 10px;
+  color: #004080;
+}
+
+.breadcrumb ul li a {
+  text-decoration: none;
+  color: #004080;
+  font-weight: bold;
+}
+
+.breadcrumb ul li a:hover {
+  color: #007acc;
+}
+
+.breadcrumb ul li:not(:last-child)::after {
+  content: ">";
+  margin-left: 10px;
+  color: #004080;
+}
+
+/* 申し込みフォームのスタイル */
+.apply-form {
+  padding: 40px 20px;
+  background: #fff;
+}
+
+.apply-form .container {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.apply-form h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #004080;
+}
+
+.apply-form p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+fieldset {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+legend {
+  font-size: 1.5em;
+  color: #004080;
+  padding: 0 10px;
+}
+
+label {
+  display: flex;
+
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  height: 350px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background: #004080;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background: #003366;
+}
+
+.order-summary {
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary #order-summary p {
+  text-align: left;
+  margin: 5px 0;
+}
+
+
+
+
+
+
+
+/* Calendar container */
+.calendar {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual calendar period */
+.calendar-period {
+  text-align: center;
+  flex: 1;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.calendar-period span {
+  display: block;
+  margin: 10px 0;
+}
+
+/* Status colors */
+.calendar-period.受付可能 {
+  background-color: #dff0d8; /* Green for available */
+}
+
+.calendar-period.満席 {
+  background-color: #f2dede; /* Red for full */
+}
+
+.calendar-period.受付終了 {
+  background-color: #fcf8e3; /* Yellow for closed */
+}
+
+/* Navigation buttons */
+.calendar-nav {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.calendar-nav a {
+  text-decoration: none;
+  color: #007bff;
+  margin: 0 10px;
+}
+
+.calendar-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Apply form */
+.apply-form {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.apply-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.apply-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.apply-form fieldset {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.apply-form label {
+  margin: 5px 0;
+}
+
+.apply-form input[type="text"],
+.apply-form input[type="email"],
+.apply-form input[type="tel"],
+.apply-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.apply-form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.apply-form button:hover {
+  background-color: #0056b3;
+}

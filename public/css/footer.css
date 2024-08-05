@@ -1,0 +1,78 @@
+/* フッター */
+footer {
+  background: linear-gradient(to bottom,  #0d00ff, #000783); /* グラデーション背景 */
+  color: #ffffff; /* テキストの色を白に */
+  padding: 40px 0; /* 上下のパディング */
+  font-family: 'Roboto', sans-serif; /* フォントファミリー */
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto; /* 中央寄せ */
+  display: flex;
+  flex-wrap: wrap; /* レスポンシブ対応 */
+  justify-content: space-between; /* セクション間を均等に分ける */
+  gap: 20px; /* セクション間のスペース */
+}
+
+.footer-nav {
+  flex: 1 1 200px; /* 各セクションの最小幅 */
+  min-width: 200px; /* セクションが小さくなりすぎないようにする */
+}
+
+.footer-nav h3 {
+  font-size: 1.5em; /* 見出しのサイズ */
+  margin-bottom: 15px; /* 見出し下のマージン */
+  border-bottom: 2px solid #ffffff; /* 下線を追加 */
+  padding-bottom: 5px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav ul li {
+  margin: 10px 0; /* リスト項目間のマージン */
+}
+
+.footer-nav ul li a {
+  color: #ffffff; /* リンクの色を白に */
+  text-decoration: none;
+  transition: color 0.3s; /* 色の遷移 */
+}
+
+.footer-nav ul li a:hover {
+  color: #b0d4f1; /* ホバー時のリンク色 */
+}
+
+.footer-contact {
+  text-align: center;
+  flex: 1 1 200px; /* コンテナのサイズ */
+}
+
+.footer-contact img {
+  width: 100px; /* ロゴのサイズ */
+  margin-bottom: 10px; /* ロゴ下のマージン */
+}
+
+.footer-contact p {
+  margin: 5px 0; /* テキストのマージン */
+}
+
+.footer-contact .phone {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  footer .container {
+    flex-direction: column; /* スマホでは縦に並べる */
+    align-items: center; /* セクションを中央揃え */
+  }
+
+  .footer-nav {
+    text-align: center;
+  }
+}

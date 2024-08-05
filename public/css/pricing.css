@@ -1,0 +1,170 @@
+/* プラン詳細セクション */
+.plans {
+  padding: 40px 20px;
+  background: #fff;
+  margin-bottom: 40px;
+}
+
+.plans .container {
+  text-align: center;
+}
+
+.plans h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.plans-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.plan {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.plan:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.plan img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.plan h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.plan p.price {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #d9534f; /* Price color */
+}
+
+.plan p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.plan ul li {
+  background: #f0f0f0;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.plan .btn {
+  display: inline-block;
+  background-color: #004080;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-top: auto;
+}
+
+.plan .btn:hover {
+  background-color: #003366;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 作業の詳細手順 */
+.work-details {
+  padding: 60px 20px;
+  background-color: #ffffff; /* ショッキングイエローの背景色 */
+}
+
+.work-details .container {
+  max-width: 900px; /* 全体の幅を900pxに設定 */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.work-details h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.work-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.work-step {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 220px; /* 最大幅を設定 */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.work-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.work-step img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.work-step h4 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.work-step p {
+  font-size: 1em;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.work-step p strong {
+  font-size: 1.1em;
+}
